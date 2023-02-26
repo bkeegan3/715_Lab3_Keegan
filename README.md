@@ -9,16 +9,7 @@
 ## Design
 ### Hardware
 For the hardware I used the IR Emitter/Detector pair as well as another LED to signal when the rpm_ISR was executed
-![]() 
-| Arduino Pins  |                   |
-| ------------- | ------------------|
-| Digital 10    | LED YLW           |
-| Digital 13    | LED RED           |
-| Digital 2     | DHT-2             |
-| 5V            | DHT-1             |
-| GND           | DHT-4             |
-
-
+![](https://github.com/bkeegan3/715_Lab3_Keegan/blob/master/images/Lab3_HW_small.jpg) 
 
 ---
 ### Software
@@ -30,8 +21,8 @@ None
 
 [Software](https://github.com/bkeegan3/715_Lab3_Keegan/blob/master/Lab3.ino)
 
-## Temperature Plot
-![]()
+## RPM Plot
+![](https://github.com/bkeegan3/715_Lab3_Keegan/blob/master/images/RPMvsTime_small.jpg)
 
 ## Video
 [![]()
