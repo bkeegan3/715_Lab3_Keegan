@@ -2,24 +2,23 @@
 int pd=2; //Photodiode to digital pin 2
 int LedG=13; //Green Led to digital pin 13
 int senRead=3; //Readings from sensor to pin 3
-int limit=850;
 
 volatile byte rpmcount=0; 
 
 unsigned int rpm=0;
-unsigned int rpm_ary[128];
-unsigned int rpm_ind=0;
 
 unsigned long timeold=0;
-static unsigned long debounceDelay = 50; 
 
 void setup() {
   // put your setup code here, to run once:
   pinMode(pd,OUTPUT);
   pinMode(LedG,OUTPUT);
+
   attachInterrupt(digitalPinToInterrupt(senRead), PD_ISR, FALLING);
+
   digitalWrite(pd,HIGH); //supply 5 volts to photodiode
   digitalWrite(LedG,LOW); //set the Green Led in off mode (initial condition)
+
   Serial.begin(9600); 
 
   sei();
